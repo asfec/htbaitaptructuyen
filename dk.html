@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng kí</title>
+    <link rel="stylesheet" href="css\dk.css">
+    <script src="css\js.js"></script>
+</head>
+<body>
+    <div>
+        <div class="page-dk">
+          <div class="box-dk">
+            <h1 class="text-dk">Đăng Kí</h1>
+            <span class="text-margin">Tên Đăng Nhập</span>
+            <input id = "username"
+              type="text"
+              placeholder="Tên Đăng Nhập"
+              class="input"
+            />
+            <span class="text-margin">Mật Khẩu</span>
+            <input id="password"
+              type="password"
+              placeholder="Mật khẩu"
+              class="input"
+            />
+            <span class="text-margin">
+              <span>Email</span>
+              <br />
+            </span>
+            <input id="email"
+             type="email" 
+             placeholder="Email"
+              class="input" />
+            <span class="text-margin">Số Điện Thoại</span>
+            <input id="phone"
+              type="number"
+              placeholder="số điện thoại"
+              class="input"/>
+            
+            <div class="dkdv">
+              <input type="checkbox" checked="true" class="checkbox" />
+              <span>Bạn Đồng Ý Với Điều Khoản Dịch Vụ</span>
+            </div>
+            <div class="dn-dk">
+              <button type="button" class="btn-dk" onclick="window.location.href='dk.html'">Đăng Kí</button>
+              <button type="button" class="btn-dn" onclick="login()">Đăng Nhập</button>
+
+            </div>
+            <!-- <div >
+              <span>Bạn đã có tài khoản ?</span>
+              <a href="dn.html" target="_self" >
+                Đăng nhập tại đây
+              </a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      
+</body>
+</html>

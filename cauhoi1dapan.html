@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href=".\css\cauhoi1dapan.css">
+    <script src="css/js.js"></script>
+</head>
+<body>
+    <div>
+        <div class="themcauhoi">
+          <div class="header">
+            <img onclick="window.location.href='themcauhoi.html'"
+            src="./anh/arrow-icon - Copy.png"
+            alt="image"
+            class="btn-back"/>
+            <h1 class="tieude">Thêm Câu Hỏi</h1>
+          </div>
+          <div class="box-1dapan">
+            <h1 class="text-margin">Câu Hỏi Trắc Nghiệm</h1>
+            <span class="text-margin text-size">Nhập Câu Hỏi :</span>
+            <textarea
+              placeholder="Câu Hỏi"
+              class="textarea" id="question"></textarea>
+            <span class="text-margin text-size">Nhập Câu Trả Lời : </span>
+            <div class="box-dapan">
+              <input type="radio" name="radio" id="ip1" value="A"/>
+              <input 
+                type="text" id="answer1"
+                placeholder="Đáp án A"
+                class="textinput-dapan"
+              />
+            </div>
+            <div class="box-dapan">
+              <input type="radio" name="radio" id="ip2" value="B" />
+              <input id="answer2"
+                type="text"
+                placeholder=" Đáp án B"
+                class="textinput-dapan"
+              />
+            </div>
+            <div class="box-dapan">
+              <input type="radio" name="radio" id="ip3" value="C"/>
+              <input
+                type="text" id="answer3"
+                placeholder="Đáp án C"
+                class="textinput-dapan"
+              />
+            </div>
+            <div class="box-dapan">
+              <input type="radio" name="radio" id="ip4" value="D"/>
+              <input
+                type="text" id="answer4"
+                placeholder="Đáp án D"
+                class="textinput-dapan"
+              />
+            </div>
+            <button type="button" class="btn-xetduyet" onclick="motdapanform()">Xét Duyệt</button>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

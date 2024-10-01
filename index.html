@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>trang chủ</title>
+   <link href="./css/index.css" rel="stylesheet" />
+  <link href="./css/menu.css" rel="stylesheet" />
+  <!-- <script src="./css/js.js"> -->
+  </script>
+  <!-- <script >window.onload= function(){
+     var user = JSON.parse(localStorage.getItem('cvurrentUser'));
+     document.getElementById('user').innerHTML = user.username ;
+      document.getElementById('email').innerHTML =user.email;
+      document.getElementById('phonenumber').innerHTML = user.phone;
+      document.getElementById('imgfile').src = user.imageFile;
+      document.getElementById('btn-dn').innerHTML = "Đăng Xuất"
+      }  -->
+  </script>
+</head>
+<body background=".\anh\LOGO.png">
+     
+      <div class="home">
+        <div class="header">
+          <div class="menu">
+            <img
+              alt="image"
+              src=".\anh\LOGO.png"
+              class="home-image"
+            />
+            <button type="button" class="btn home-trang-ch button" onclick="window.location.href='index.html'">Trang Chủ</button>
+            <button type="button" class=" button" onclick="window.location.href='bocauhoi.html'">Bộ Câu Hỏi</button>
+            <button type="button" class=" button" onclick="window.location.href='lienhe.html'">Liên Hệ</button>
+
+            <button type="button" class="btn-dn button" onclick="window.location.href='dn.html'" id="btn-dn">Đăng Nhập</button>
+          </div>
+        </div>
+        <div class="home-trangchu" id="userInfo">
+          <img id="imgfile"
+            alt="image"
+            src=".\anh\LOGO.png"
+            class="home-avatar"
+          />
+          <div class="home-thongtintk">
+              <span>Bạn đang đăng nhập với tài khoản :</span>
+              <br />
+
+              <span id="user">tên tk</span>
+              <br />
+            <span>Email:</span>
+              <span id="email">email</span>
+              <br />
+            </span>
+            <span>Số Điện Thoại</span>
+            <br/>
+            <span id="phonenumber">sdt</span>
+          </div>
+        </div>
+      </div>
+      
+</body>
+</html>

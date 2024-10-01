@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Câu Hỏi Tự Luận</title>
+</head>
+<link href="./css/tuluan.css" rel="stylesheet" />
+<script src="./css/js.js"></script>
+<body>
+    <div>
+        <div class="themcauhoi">
+          <div class="header">
+            <img onclick="window.location.href='duyetcauhoi.html'"
+            src="./anh/arrow-icon - Copy.png"
+            alt="image"
+            class="btn-back"
+          />
+            <h1 class="tieude">Thêm Câu Hỏi</h1>
+          </div>
+          <div class="box-tuluan">
+            <h1 class="text-margin">Câu Hỏi Tự Luận</h1>
+            <span class="text-margin text-size">Nhập Câu Hỏi :</span>
+            <textarea placeholder="Câu Hỏi" class="textarea" id="question"></textarea>
+            <span class="text-margin text-size">Nhập Câu Trả Lời :</span>
+            <textarea placeholder="Câu Trả lời" class="textarea" id="answer" ></textarea>
+            <button type="button" class="btn-xetduyet" onclick="tuluanform()">Xét Duyệt</button>
+          </div>
+        </div>
+      </div>
+      
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bộ Câu Hỏi</title>
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/bocauhoi.css">
+    <script>
+      function chonrole(){
+        var currentUser = JSON.parse(localStorage.getItem('currentUser')); 
+        if(currentUser.username == 'admin1'){
+          window.location.href = 'duyetcauhoi.html';
+        }
+        else{
+          window.location.href='themcauhoi.html';
+        }
+      }
+    </script>
+</head>
+<body>
+    <div class="home">
+      <div class="header">
+         <div class="menu">
+           <img
+             alt="image"
+             src=".\anh\LOGO.png"
+             class="home-image"
+           />
+           <button type="button" class="btn home-trang-ch button" onclick="window.location.href='index.html'">Trang Chủ</button>
+           <button type="button" class="home-button button" onclick="window.location.href='bocauhoi.html'">Bộ Câu Hỏi</button>
+           <button type="button" class="home-button1 button" onclick="window.location.href='lienhe.html'">Liên Hệ</button>
+         </div>
+         </div>
+       </div>
+       <div class="home-bch">
+         <div class="bch">
+           <img
+             alt="image"
+             src="anh\htmlimg.png"
+             class="bch-img"
+           />
+           <h3 class="bch-text">HTML</h3>
+           <span class="bch-text">Bộ Câu Hỏi HTML</span>
+           <img
+             src="anh\arrow-icon.png"
+             alt="image"
+             class="bch-arrow"
+           />
+         </div>
+         <div class="bch bch-margin" onclick=chonrole()>
+           <img 
+             alt="image"
+             src="anh\cssimg.png"
+             class="bch-img"
+           />
+           <h3 class="bch-text">
+             <span>CSS</span>
+             <br />
+           </h3>
+           <span class="bch-text">Bộ Câu Hỏi CSS</span>
+           <img
+             src="anh\arrow-icon.png"
+             alt="image"
+             class="bch-arrow"
+           />
+         </div>
+         <div class="bch">
+           <img
+             alt="image"
+             src="anh\jsimg.png"
+             class="bch-img"
+           />
+           <h3 class="bch-text">
+             <span>JAVASCRIPT</span>
+             <br />
+           </h3>
+           <span class="bch-text">Bộ Câu Hỏi JS</span>
+           <img
+             src="anh\arrow-icon.png"
+             alt="image"
+             class="bch-arrow"
+           />
+         </div>
+       </div>
+        </div>
+</body>
+</html>
